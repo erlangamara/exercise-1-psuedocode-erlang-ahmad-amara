@@ -1,0 +1,42 @@
+1.  STORE “m” to 600
+    STORE “a” to 2
+    STORE “reultanGaya” without any value
+
+    CALCULATE “m” times “a”
+    SET “resultanGaya” with calculation result
+
+    DISPLAY “resultanGaya” value
+
+2.  STORE “tahun” with any value
+    CALCULATE “tahun” mod 4
+    STORE “syaratPertama” to the result of calculation
+    CALCULATE “tahun” mod 100
+    STORE “syaratKedua” to the result of calculation
+    CALCULATE “tahun” mod 400
+    STORE “syaratKetiga” to the result of calculation
+
+    IF “syaratPertama” euals to 0 AND “syaratKedua” is not equals to 0 OR “syaratPertama” equals to 0 AND “syaratKedua” is not equals to 0 AND “syaratKetiga” equals to 0
+	    DISPLAY “Tahun kabisat”
+    ELSE
+	    DISPLAY “Bukan tahun kabisat”
+
+3.  STORE “pakaianDimasukan” to 1
+    WHILE “pakaianDimasukan” < 21
+	    DISPLAY “pakaian yang telah dimasukan:” with the value of “pakaianDimasukan”
+	    add “pakaianDimasukan” by 1
+    DISPLAY “PakaianDimasukan semua”
+
+4.  STORE “siswa” to 0
+    STORE “data_kuku_siswa” list with list items
+    STORE “kuku_panjang” with any value 
+
+    WHILE “siswa” < 40
+	    STORE “list_kuku” with “data_kuku_siswa” fitst list items
+	    IF list_kuku > kuku_panjang
+		    DISPLAY “Hukum siswa!”
+	    ELSE
+		    DISPLAY “Puji Siswa!”
+	
+	    add “siswa” by 1
+	    add  “list_kuku” by next “data_kuku_siswa” list items
+
