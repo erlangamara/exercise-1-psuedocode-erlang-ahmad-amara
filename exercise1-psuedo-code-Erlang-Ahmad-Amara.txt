@@ -24,7 +24,7 @@
     WHILE “pakaianDimasukan” < 21
 	    DISPLAY “pakaian yang telah dimasukan:” with the value of “pakaianDimasukan”
 	    add “pakaianDimasukan” by 1
-    DISPLAY “PakaianDimasukan semua”
+    DISPLAY “Pakaian telah dimasukan semua”
 
 4.  STORE “siswa” to 0
     STORE “data_kuku_siswa” list with list items
